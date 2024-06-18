@@ -14,38 +14,38 @@ The goal of this project is to build a choose your own adventure game applying t
 - ~~TODO: Step 4 - Create a Constructor for this class to be able to initialise the properties created in step 3.~~
 - ~~TODO: Step 5 - Create a new class called StoryBrain.~~
 - ~~TODO: Step 6 - import the story.dart file into this StoryBrain class file.~~
-- ~~TODO: Step 7 - Add the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.~~
-List<Story> _storyData = \[\n
-  Story(\n
-      storyTitle:\n
-      'Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: "Need a ride, boy?".',\n
-      choice1: 'I\'ll hop in. Thanks for the help!',\n
-      choice2: 'Better ask him if he\'s a murderer first.'),\n
-  Story(\n
-      storyTitle: 'He nods slowly, unphased by the question.',\n
-      choice1: 'At least he\'s honest. I\'ll climb in.',\n
-      choice2: 'Wait, I know how to change a tire.'),\n
-  Story(\n
-      storyTitle:\n
-      'As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box.',\n
-      choice1: 'I love Elton John! Hand him the cassette tape.',\n
-      choice2: 'It\'s him or me! You take the knife and stab him.'),\n
-  Story(\n
-      storyTitle:\n
+- ~~TODO: Step 7 - Add the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.~~  
+List<Story> _storyData = \[  
+  Story(  
+      storyTitle:  
+      'Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: "Need a ride, boy?".',  
+      choice1: 'I\'ll hop in. Thanks for the help!',  
+      choice2: 'Better ask him if he\'s a murderer first.'),  
+  Story(  
+      storyTitle: 'He nods slowly, unphased by the question.',  
+      choice1: 'At least he\'s honest. I\'ll climb in.',  
+      choice2: 'Wait, I know how to change a tire.'),  
+  Story(  
+      storyTitle:  
+      'As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box.',  
+      choice1: 'I love Elton John! Hand him the cassette tape.',  
+      choice2: 'It\'s him or me! You take the knife and stab him.'),  
+  Story(  
+      storyTitle:  
       'What? Such a cop out! Did you know traffic accidents are the second leading cause of accidental death for most adult age groups?',\n
-      choice1: 'Restart',\n
-      choice2: ''),\n
-  Story(\n
-      storyTitle:\n
-      'As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in.',\n
-      choice1: 'Restart',\n
-      choice2: ''),\n
-  Story(\n
-      storyTitle:\n
-      'You bond with the murderer while crooning verses of "Can you feel the love tonight". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: "Try the pier".',\n
-      choice1: 'Restart',\n
-      choice2: '')\n
-\];\n
+      choice1: 'Restart',  
+      choice2: ''),  
+  Story(  
+      storyTitle:  
+      'As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in.',  
+      choice1: 'Restart',  
+      choice2: ''),  
+  Story(  
+      storyTitle:  
+      'You bond with the murderer while crooning verses of "Can you feel the love tonight". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: "Try the pier".',  
+      choice1: 'Restart',  
+      choice2: '')  
+\];  
 
 - ~~TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.~~
 - TODO: Step 9 - Create a new storyBrain object from the StoryBrain class.
