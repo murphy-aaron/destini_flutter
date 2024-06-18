@@ -48,14 +48,14 @@ List<Story> _storyData = \[
 \];  
 
 - ~~TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.~~
-- TODO: Step 9 - Create a new storyBrain object from the StoryBrain class.
-- TODO: Step 10 - use the storyBrain to get the first story title and display it in this Text Widget.
-- TODO: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.
-- TODO: Step 12 - Create a method called getChoice2() that returns the text for the first choice2 from _storyData.
-- TODO: Step 13 - Use the storyBrain to get the text for choice 1.
-- TODO: Step 14 - Use the storyBrain to get the text for choice 2.
-- TODO: Step 15 - Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.
-- TODO: Step 16 - Create a property called storyNumber which starts with a value of 0. This will be used to track which story the user is currently viewing.
+- ~~TODO: Step 9 - Create a new storyBrain object from the StoryBrain class.~~
+- ~~TODO: Step 10 - use the storyBrain to get the first story title and display it in this Text Widget.~~
+- ~~TODO: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.~~
+- ~~TODO: Step 12 - Create a method called getChoice2() that returns the text for the first choice2 from _storyData.~~
+- ~~TODO: Step 13 - Use the storyBrain to get the text for choice 1.~~
+- ~~TODO: Step 14 - Use the storyBrain to get the text for choice 2.~~
+- ~~TODO: Step 15 - Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.~~
+- ~~TODO: Step 16 - Create a property called storyNumber which starts with a value of 0. This will be used to track which story the user is currently viewing.~~
 - TODO: Step 17 - Create a method called nextStory(), it should not have any outputs but it should have 1 input called choiceNumber which will be the choice number (int) made by the user.
 - TODO: Step 18 - Call the nextStory() method from storyBrain and pass the number 1 as the choice made by the user.
 - TODO: Step 19 - Call the nextStory() method from storyBrain and pass the number 2 as the choice made by the user.

@@ -1,3 +1,4 @@
+import 'package:destini_flutter/story_brain.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Destini());
@@ -13,6 +14,8 @@ class Destini extends StatelessWidget {
     );
   }
 }
+
+StoryBrain storyBrain = StoryBrain();
 
 class StoryPage extends StatefulWidget {
   const StoryPage({super.key});
@@ -42,7 +45,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 12,
                 child: Center(
                   child: Text(
-                    'Story text will go here.',
+                    storyBrain.getStory(),
                     style: TextStyle(
                       fontSize: 25.0,
                     ),
@@ -62,7 +65,7 @@ class _StoryPageState extends State<StoryPage> {
                     print('Choice 1 selected');
                   },
                   child: Text(
-                    'Choice 1'
+                    storyBrain.getChoice1()
                   ),
                 )
               ),
@@ -82,7 +85,7 @@ class _StoryPageState extends State<StoryPage> {
                     print('Choice 2 selected');
                   },
                   child: Text(
-                    'Choice 2'
+                    storyBrain.getChoice2()
                   ),
                 )
               ),
