@@ -42,4 +42,28 @@ class StoryBrain {
   String getChoice2() {
     return _storyData[_storyIndex].choice2;
   }
+
+  void nextStory(int choice) {
+    if (_storyIndex == 0) {
+      _storyIndex = choice == 1 ? 2 : 1;
+    } else if (_storyIndex == 1) {
+      _storyIndex = choice == 1 ? 2 : 3;
+    } else if(_storyIndex == 2) {
+      _storyIndex = choice == 1 ? 5 : 4;
+    } else if(_storyIndex >= 3) {
+      reset();
+    }
+  }
+
+  void reset() {
+    _storyIndex = 0;
+  }
+
+  int getStoryIndex() {
+    return _storyIndex;
+  }
+
+  bool buttonShouldBeVisible() {
+    return _storyIndex < 3;
+  }
 }

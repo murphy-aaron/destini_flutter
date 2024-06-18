@@ -25,6 +25,7 @@ class StoryPage extends StatefulWidget {
 }
 
 class _StoryPageState extends State<StoryPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +48,7 @@ class _StoryPageState extends State<StoryPage> {
                   child: Text(
                     storyBrain.getStory(),
                     style: TextStyle(
-                      fontSize: 25.0,
+                      fontSize: 28.0,
                     ),
                   ),
                 )
@@ -57,15 +58,21 @@ class _StoryPageState extends State<StoryPage> {
                 child: TextButton(
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.red,
+                    foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0)
                     )
                   ),
                   onPressed: () {
-                    print('Choice 1 selected');
+                    setState(() {
+                      storyBrain.nextStory(1);
+                    });
                   },
                   child: Text(
-                    storyBrain.getChoice1()
+                    storyBrain.getChoice1(),
+                    style: TextStyle(
+                      fontSize: 20.0
+                    ),
                   ),
                 )
               ),
@@ -74,18 +81,27 @@ class _StoryPageState extends State<StoryPage> {
               ),
               Expanded(
                 flex: 2,
-                child: TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0)
-                    )
-                  ),
-                  onPressed: () {
-                    print('Choice 2 selected');
-                  },
-                  child: Text(
-                    storyBrain.getChoice2()
+                child: Visibility(
+                  visible: storyBrain.buttonShouldBeVisible(),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0)
+                      )
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        storyBrain.nextStory(2);
+                      });
+                    },
+                    child: Text(
+                      storyBrain.getChoice2(),
+                      style: TextStyle(
+                          fontSize: 20.0
+                      ),
+                    ),
                   ),
                 )
               ),
